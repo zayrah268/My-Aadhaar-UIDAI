@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Aadhaar UIDAI | Identidad Digital Aadhaar Explicada</title>
+
+  <style>
+    :root{
+      /* 2-color premium combo (better flow + pro): Midnight + Aqua */
+      --primary:#0B1220;   /* midnight */
+      --accent:#22D3EE;    /* aqua */
+
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#E7EEF7;
+      --soft:#F6FAFF;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(1000px 360px at 15% 0%, rgba(34,211,238,.12), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+    }
+
+    /* ====== Full width hero (no side boxes) ====== */
+    header{
+      background: linear-gradient(90deg, var(--primary), #121a2f);
+      color:#fff;
+      padding: 44px 16px 22px;
+    }
+    .wrap{
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.06);
+      backdrop-filter: blur(10px);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .2px;
+      color: rgba(255,255,255,.92);
+    }
+    .badge i{
+      width:10px;height:10px;border-radius:999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(34,211,238,.14);
+      display:inline-block;
+    }
+
+    h1{
+      margin: 14px 0 10px;
+      font-size: clamp(24px, 3.2vw, 42px);
+      font-weight: 950;
+      letter-spacing: -.45px;
+      line-height: 1.15;
+    }
+    .lead{
+      margin:0;
+      max-width: 1100px;
+      color: rgba(255,255,255,.9);
+      font-size: 16px;
+    }
+
+    .accent-line{
+      width:100%;
+      height: 6px;
+      background: var(--accent);
+    }
+
+    /* ====== Main layout ====== */
+    main{
+      padding: 26px 16px 64px;
+    }
+
+    .content{
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    /* Flow: table-of-contents style row (not a side box) */
+    .flow{
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(90deg, rgba(34,211,238,.10), rgba(11,18,32,.02));
+      border-radius: 16px;
+      padding: 14px 14px;
+    }
+    .flow strong{
+      color: var(--primary);
+      font-weight: 950;
+    }
+    .flow .items{
+      margin-top: 10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background:#fff;
+      border: 1px solid var(--line);
+      color: var(--primary);
+      font-weight: 850;
+      font-size: 13px;
+    }
+    .pill span{
+      width:10px;height:10px;border-radius:999px;
+      background: var(--accent);
+    }
+
+    /* Sections */
+    section{
+      margin-top: 22px;
+      padding-top: 8px;
+    }
+    h2{
+      margin: 18px 0 10px;
+      font-size: 19px;
+      font-weight: 950;
+      letter-spacing: -.25px;
+      color: var(--primary);
+    }
+    p{
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 15.6px;
+    }
+
+    .sep{
+      border-top: 1px solid var(--line);
+      margin: 18px 0;
+    }
+
+    /* Highlight block (full width) */
+    .callout{
+      margin: 14px 0 18px;
+      padding: 14px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(34,211,238,.28);
+      background: rgba(34,211,238,.08);
+      color: var(--text);
+    }
+    .callout strong{ color: var(--primary); }
+
+    /* ONLY 2 links total */
+    a.link{
+      color: var(--accent);
+      font-weight: 950;
+      text-decoration: none;
+      border-bottom: 3px solid rgba(34,211,238,.35);
+      padding-bottom: 1px;
+    }
+    a.link:hover{
+      border-bottom-color: rgba(34,211,238,.8);
+    }
+
+    footer{
+      border-top: 1px solid var(--line);
+      background: var(--soft);
+      padding: 14px 16px;
+      text-align:center;
+      color:#64748b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="badge"><i aria-hidden="true"></i> Identidad digital • Seguridad • Transparencia</div>
+      <h1>My Aadhaar UIDAI | Identidad Digital Aadhaar Explicada</h1>
+      <p class="lead">
+        En un mundo donde la digitalización avanza rápidamente, la gestión segura de la identidad personal se ha convertido en una prioridad. En la India, el sistema Aadhaar desempeña un papel fundamental como identificación oficial, y My Aadhaar UIDAI representa el acceso digital centralizado a la información relacionada con este sistema.
+      </p>
+    </div>
+  </header>
+
+  <div class="accent-line" aria-hidden="true"></div>
+
+  <main>
+    <div class="content">
+
+      <p>
+        Gestionado por la Unique Identification Authority of India (UIDAI), My Aadhaar es una iniciativa diseñada para acercar la identidad digital a los ciudadanos de forma clara, segura y transparente. Para una referencia informativa relacionada, visita
+        <a class="link" href="https://myadhaaruidai.com/" target="_blank" rel="noopener">my aadhaar uidai</a>.
+      </p>
+
+      <div class="flow" aria-label="Resumen de contenido">
+        <strong>Qué encontrarás en esta guía:</strong>
+        <div class="items">
+          <div class="pill"><span></span> Definición</div>
+          <div class="pill"><span></span> Rol de UIDAI</div>
+          <div class="pill"><span></span> Beneficios</div>
+          <div class="pill"><span></span> Privacidad</div>
+          <div class="pill"><span></span> Uso responsable</div>
+          <div class="pill"><span></span> Futuro</div>
+        </div>
+      </div>
+
+      <div class="sep"></div>
+
+      <section>
+        <h2>¿Qué es My Aadhaar UIDAI?</h2>
+        <p>
+          My Aadhaar UIDAI se refiere al ecosistema digital oficial que permite a los ciudadanos interactuar con la información y orientación relacionada con Aadhaar. Su objetivo principal es ofrecer acceso directo a contenidos oficiales, evitando la confusión generada por fuentes no verificadas.
+        </p>
+        <p>
+          A través de My Aadhaar, los usuarios pueden conocer el funcionamiento del sistema Aadhaar, entender su uso en distintos servicios y aprender las mejores prácticas para proteger su identidad digital.
+        </p>
+      </section>
+
+      <section>
+        <h2>El papel de UIDAI en My Aadhaar</h2>
+        <p>
+          La UIDAI es una autoridad estatutaria creada por el Gobierno de la India con la responsabilidad de emitir los números Aadhaar y garantizar la integridad del sistema. My Aadhaar UIDAI forma parte de esta misión institucional, proporcionando un canal oficial de información para los ciudadanos.
+        </p>
+        <div class="callout">
+          <strong>UIDAI se enfoca en:</strong> transparencia en la gestión de datos, protección de la privacidad, seguridad de la información e inclusión digital.
+        </div>
+      </section>
+
+      <section>
+        <h2>My Aadhaar como centro de información confiable</h2>
+        <p>
+          Uno de los mayores beneficios de My Aadhaar UIDAI es su función como centro integral de información. La plataforma no solo explica qué es Aadhaar, sino que también aclara cómo se utiliza en procesos cotidianos como verificación de identidad, acceso a servicios públicos y autenticación digital.
+        </p>
+        <p>
+          Este enfoque educativo ayuda a los ciudadanos a tomar decisiones informadas y a utilizar su identidad de manera consciente y segura.
+        </p>
+      </section>
+
+      <section>
+        <h2>Importancia de My Aadhaar en la identidad digital</h2>
+        <p>
+          My Aadhaar UIDAI desempeña un papel clave dentro del ecosistema de identidad digital de la India. Aadhaar se utiliza ampliamente en sectores como banca, programas sociales, telecomunicaciones y servicios gubernamentales.
+        </p>
+        <p>
+          Al centralizar información oficial, la plataforma reduce la desinformación y fortalece la confianza pública.
+        </p>
+      </section>
+
+      <section>
+        <h2>Seguridad y privacidad en My Aadhaar UIDAI</h2>
+        <p>
+          La protección de los datos personales es una prioridad absoluta dentro del sistema Aadhaar. My Aadhaar UIDAI pone un fuerte énfasis en la concienciación sobre privacidad y uso responsable de la identidad digital.
+        </p>
+        <div class="callout">
+          <strong>Principios clave:</strong> uso basado en consentimiento, compartición limitada de información, prevención del fraude y conocimiento de los derechos del titular de Aadhaar.
+        </div>
+      </section>
+
+      <section>
+        <h2>Diferencia entre My Aadhaar UIDAI y sitios no oficiales</h2>
+        <p>
+          Es fundamental diferenciar entre My Aadhaar UIDAI, que es una iniciativa oficial respaldada por el gobierno, y los sitios web de terceros que solo ofrecen información general. Para información auténtica y actualizada, la fuente oficial debe ser siempre la primera opción.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experiencia de usuario y accesibilidad</h2>
+        <p>
+          My Aadhaar UIDAI está diseñado para ser accesible a usuarios con distintos niveles de conocimiento digital. Su lenguaje claro, estructura ordenada y enfoque informativo facilitan la comprensión de temas complejos relacionados con la identidad digital.
+        </p>
+      </section>
+
+      <section>
+        <h2>Empoderamiento ciudadano a través de My Aadhaar</h2>
+        <p>
+          Uno de los objetivos principales de My Aadhaar UIDAI es empoderar a los ciudadanos. Al ofrecer información directa y oficial, la plataforma reduce la dependencia de intermediarios y fomenta la autonomía digital.
+        </p>
+      </section>
+
+      <section>
+        <h2>Uso responsable y futuro de My Aadhaar UIDAI</h2>
+        <p>
+          Aunque My Aadhaar proporciona información completa, el uso responsable sigue siendo fundamental. Los ciudadanos deben acceder únicamente a plataformas oficiales y evitar compartir datos personales en sitios no verificados.
+        </p>
+        <p>
+          Con el avance continuo de la digitalización, se esperan mejoras en experiencia de usuario, claridad informativa y protección de la privacidad. Para ver otra referencia informativa relacionada, visita
+          <a class="link" href="https://luxury-capybara-2e18af.netlify.app/" target="_blank" rel="noopener">My Aadhaar</a>.
+        </p>
+      </section>
+
+      <div class="sep"></div>
+
+      <section>
+        <h2>Conclusión</h2>
+        <p>
+          My Aadhaar UIDAI representa el núcleo informativo del sistema Aadhaar y un pilar fundamental de la identidad digital en la India. Su enfoque en la transparencia, la seguridad y la educación digital lo convierte en una herramienta esencial para comprender y utilizar Aadhaar de manera correcta.
+        </p>
+        <p>
+          En un mundo cada vez más digital, My Aadhaar UIDAI se consolida como una fuente confiable que fortalece la relación entre los ciudadanos y su identidad digital oficial.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> • Diseño full-width • 2-color UI (Midnight + Aqua)
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
